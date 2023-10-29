@@ -1,6 +1,8 @@
+import {FaExternalLinkAlt} from "react-icons/fa";
+
 export default function Portfolio() {
   return (
-    <div>
+    <div className="main">
       <h1>My Portfolio</h1>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.

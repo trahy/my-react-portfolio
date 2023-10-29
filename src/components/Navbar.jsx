@@ -1,48 +1,48 @@
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
-function NavTabs({ currentPage, handlePageChange }) {
+import "./Navbar.css"
 
-
+function Navbar({ currentPage, handlePageChange }) {
   return (
-    <ul className="">
+    <ul className="navbar">
       <li className="btn">
         <a
-          href="about"
+          href="#about"
           onClick={() => handlePageChange('About')}
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'About' ? 'navLink Active' : 'navLink'}
         >
           About
         </a>
       </li>
       <li className="btn">
         <a
-          href="portfolio"
+          href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
-          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Portfolio' ? 'navLink active' : 'navLink'}
         >
           Portfolio
         </a>
       </li>
       <li className="btn">
         <a
-          href="Contact"
+          href="#Contact"
           onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Contact' ? 'navLink active' : 'navLink'}
         >
           Contact
         </a>
       </li>
       <li className="btn">
         <a
-          href="resume"
+          href="#resume"
           onClick={() => handlePageChange('Resume')}
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Resume' ? 'navLink active' : 'navLink'}
         >
-          Contact
+          Resume
         </a>
       </li>
     </ul>
   );
 }
 
-export default NavTabs;
+export default Navbar;
