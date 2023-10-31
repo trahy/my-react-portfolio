@@ -1,48 +1,37 @@
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
-import "./Navbar.css"
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
-function Navbar({ currentPage, handlePageChange }) {
+export default function Navbar() {
   return (
-    <ul className="navbar">
-      <li className="btn">
-        <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
-          className={currentPage === 'About' ? 'navLink Active' : 'navLink'}
-        >
-          About
-        </a>
-      </li>
-      <li className="btn">
-        <a
-          href="#portfolio"
-          onClick={() => handlePageChange('Portfolio')}
-          className={currentPage === 'Portfolio' ? 'navLink active' : 'navLink'}
-        >
-          Portfolio
-        </a>
-      </li>
-      <li className="btn">
-        <a
-          href="#Contact"
-          onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'navLink active' : 'navLink'}
-        >
-          Contact
-        </a>
-      </li>
-      <li className="btn">
-        <a
-          href="#resume"
-          onClick={() => handlePageChange('Resume')}
-          className={currentPage === 'Resume' ? 'navLink active' : 'navLink'}
-        >
-          Resume
-        </a>
-      </li>
-    </ul>
+    <nav className="nav">
+      <ul className="navbar">
+        <li className="navBtn">
+          <CustomLink to="/">ABOUT</CustomLink>
+        </li>
+        <li className="navBtn">
+          <CustomLink to="/portfolio">PORTFOLIO</CustomLink>
+        </li>
+        <li className="navBtn">
+          <CustomLink to="/contact">CONTACT</CustomLink>
+        </li>
+        <li className="navBtn">
+          <CustomLink to="/resume">RESUME</CustomLink>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
-export default Navbar;
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  );
+}

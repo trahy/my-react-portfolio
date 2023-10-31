@@ -2,13 +2,24 @@ export default function About() {
   return (
     <div className="main">
       <h1>About Me</h1>
-      <p className='cambria'>
-      Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum.
-      </p>
-      <button className='btn' >asdas</button>
+      <div className="aboutDiv">
+        <div className="aboutLeft gridItem">
+          <img
+            className="about-p"
+            src="https://static.vecteezy.com/system/resources/previews/004/819/327/non_2x/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg"
+            width="250"
+          ></img>
+        </div>
+        <div className="aboutRight gridItem">
+          <h2>Hi, I'm Huy.</h2>
+          <p>
+            I am a passionate designer who loves to create things. I am a
+            professional Product and Industrial Designer who is currently
+            studying to become a Full Stack Developer in hopes to create even
+            more things.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

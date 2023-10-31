@@ -2,19 +2,22 @@ export default function Contact() {
   return (
     <div className="main">
       <h1>Contact Me</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <div className="contactDiv">
+        <form action="">
+          <div className="contactRow">
+            <label className="leftCol" htmlFor="">Name</label>
+            <input className="rightCol" placeholder="Your Name" type="text" required />
+          </div>
+          <div className="contactRow">
+            <label className="leftCol" htmlFor="">Email</label>
+            <input className="rightCol" placeholder="example@email.com" type="text" required />
+          </div>
+          <div className="contactRow">
+            <label className="leftCol" htmlFor="">Message</label>
+            <textarea className="rightCol" placeholder="Enter a message"></textarea>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
