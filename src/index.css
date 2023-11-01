@@ -35,6 +35,16 @@ h1 {
   margin-bottom: 4rem;
 }
 
+p {
+  font-size: 1.2em;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a:hover,
 a:active,
 a:visited {
@@ -42,8 +52,9 @@ a:visited {
   color: black;
 }
 
-button {
-  padding: 12px 25px;
+.btn {
+  background-color: wheat;
+  padding: 8px 20px;
   border: 2px solid;
 }
 
@@ -83,20 +94,61 @@ button {
 }
 
 /* contact page */
-/* .contactRow {
-  display: block;
-} */
+.contactDiv {
+  display: flex;
+  justify-content: center;
+}
 
-/* .leftCol {
-  float: left;
-  width: 30%;
-  margin-top: 1rem;
-} */
+form {
+  width: 100%;
+  padding: 50px;
+  border: 2px solid black;
+}
 
-.rightCol {
+.formDiv {
+  width: 90%;
+  margin: 0 auto;
+}
+
+div > label {
+  font-weight: 500;
+}
+
+.textInput {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: ivory;
+  border: 2px solid black;
+}
+
+textarea {
+  height: 6rem;
+}
+
+.contactBtn {
+  float: inline-end;
+}
+
+.colLeft {
+  text-align: end;
   float: left;
-  width: 70%;
-  margin-top: 1rem;
+  width: 15%;
+}
+
+.colRight {
+  float: left;
+  width: 85%;
+  padding-left: 2rem;
+}
+
+.contactRow {
+}
+
+.contactRow::after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 1rem;
 }
 
 /* footer component */
@@ -126,7 +178,8 @@ button {
 /* buttons hover */
 
 .navBtn,
-.footerBtn .btn {
+.footerBtn,
+.btn {
   background-image: linear-gradient(to top, white 50%, black 50%),
     linear-gradient(to top, black 50%, transparent 50%);
 
@@ -139,6 +192,24 @@ button {
 }
 
 .navBtn:hover,
-.footerBtn:hover .btn:hover {
+.footerBtn:hover,
+.btn:hover {
   background-position: bottom;
+}
+
+/* media queries */
+@media screen and (max-width: 776px) {
+  .colLeft,
+  .colright,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .colLeft {
+    text-align: start;
+  }
+  .colRight {
+    padding: 0;
+    width: 100%;
+  }
 }
