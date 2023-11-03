@@ -3,14 +3,14 @@ export default function About() {
     <div className="main">
       <h1>About Me</h1>
       <div className="aboutDiv">
-        <div className="aboutLeft gridItem">
+        <div className="aboutLeft aboutItem">
           <img
             className="about-p"
             src="https://static.vecteezy.com/system/resources/previews/004/819/327/non_2x/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg"
             width="250"
           ></img>
         </div>
-        <div className="aboutRight gridItem">
+        <div className="aboutRight aboutItem">
           <h2>Hi, I'm Huy.</h2>
           <p>
             I am a professional Product and Industrial Designer who is currently

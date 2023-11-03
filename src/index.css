@@ -52,7 +52,6 @@ a:visited {
   border: 2px solid black;
 }
 
-
 /* navbar component */
 .navbar {
   border-bottom: 2px solid;
@@ -69,7 +68,6 @@ a:visited {
   border-left: 2px solid black;
 }
 
-
 /* About Page */
 .aboutDiv {
   display: grid;
@@ -85,10 +83,34 @@ a:visited {
   margin-top: 2rem;
 }
 
-.gridItem {
+.aboutItem {
   padding: 50px;
 }
 
+/* portfolio page */
+.p-grid {
+  display: grid;
+  border: 1px solid black;
+  max-width: calc(100% / 3);
+  height: auto;
+  margin: 0 auto;
+}
+
+.p-item {
+  position: relative;
+}
+
+.p-img {
+  border: 1px solid black;
+  padding: 40px;
+}
+
+.p-img > img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 
 /* contact page */
 .contactDiv {
@@ -145,12 +167,10 @@ textarea {
   margin-bottom: 1rem;
 }
 
-
 /* resume page */
 .pdfobject-container {
   height: 30rem;
 }
-
 
 /* footer component */
 .footerDiv {
@@ -194,15 +214,13 @@ svg:hover {
   transition: 0.25s;
 }
 
-
 /* media queries */
-@media screen and (max-width: 776px) {
-
+@media only screen and (max-width: 768px) {
   /* navbar mq */
   .navbar {
     flex-direction: column;
   }
-   
+
   /* contact me page mq */
   .contactLeft,
   .contactright,
@@ -217,4 +235,28 @@ svg:hover {
     padding: 0;
     width: 100%;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+	.p-grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.p-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.p-grid {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		max-width: 100%;
+	}
 }
