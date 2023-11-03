@@ -13,10 +13,9 @@ export default function About() {
         <div className="aboutRight gridItem">
           <h2>Hi, I'm Huy.</h2>
           <p>
-            I am a passionate designer who loves to create things. I am a
-            professional Product and Industrial Designer who is currently
-            studying to become a Full Stack Developer in hopes to create even
-            more things.
+            I am a professional Product and Industrial Designer who is currently
+            studying to become a Full Stack Developer. I am passionate about
+            creating things and love to learn.
           </p>
         </div>
       </div>

@@ -6,17 +6,17 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <ul className="navbar">
-        <li className="navBtn">
-          <CustomLink to="/">ABOUT</CustomLink>
+        <li>
+          <a className="navBtn" href="/">ABOUT</a>
         </li>
-        <li className="navBtn">
-          <CustomLink to="/portfolio">PORTFOLIO</CustomLink>
+        <li>
+        <a className="navBtn" href="/portfolio">PORTFOLIO</a>
         </li>
-        <li className="navBtn">
-          <CustomLink to="/contact">CONTACT</CustomLink>
+        <li>
+        <a className="navBtn" href="/contact">CONTACT</a>
         </li>
-        <li className="navBtn">
-          <CustomLink to="/resume">RESUME</CustomLink>
+        <li>
+        <a className="navBtn" href="/resume">RESUME</a>
         </li>
       </ul>
     </nav>
