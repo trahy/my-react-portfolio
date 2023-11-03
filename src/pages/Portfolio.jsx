@@ -6,15 +6,15 @@ export default function Portfolio() {
       <h1>My Portfolio</h1>
       <div className="portfolioContainer">
         <div className="portfolioRow">
-          <div className="portfolioCol">
-            <img src="src/assets/ReadMi.png" alt="" />
+          <div className="col">
+            <img src="src/assets/ReadMi.png" alt="read mi webpage" />
             <img src="" alt="" />
           </div>
-          <div className="portfolioCol">
+          <div className="col">
             <img src="" alt="" />
             <img src="" alt="" />
           </div>
-          <div className="portfolioCol">
+          <div className="col">
             <img src="" alt="" />
             <img src="" alt="" />
           </div>

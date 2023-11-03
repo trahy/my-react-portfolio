@@ -52,6 +52,7 @@ a:visited {
   border: 2px solid black;
 }
 
+
 /* navbar component */
 .navbar {
   border-bottom: 2px solid;
@@ -67,6 +68,7 @@ a:visited {
   text-decoration: none;
   border-left: 2px solid black;
 }
+
 
 /* About Page */
 .aboutDiv {
@@ -86,6 +88,7 @@ a:visited {
 .gridItem {
   padding: 50px;
 }
+
 
 /* contact page */
 .contactDiv {
@@ -110,7 +113,7 @@ div > label {
 
 .textInput {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: ivory;
   border: 2px solid black;
 }
@@ -123,19 +126,16 @@ textarea {
   float: inline-end;
 }
 
-.colLeft {
+.contactLeft {
   text-align: end;
   float: left;
   width: 15%;
 }
 
-.colRight {
+.contactRight {
   float: left;
   width: 85%;
   padding-left: 2rem;
-}
-
-.contactRow {
 }
 
 .contactRow::after {
@@ -144,6 +144,13 @@ textarea {
   clear: both;
   margin-bottom: 1rem;
 }
+
+
+/* resume page */
+.pdfobject-container {
+  height: 30rem;
+}
+
 
 /* footer component */
 .footerDiv {
@@ -184,16 +191,21 @@ textarea {
 svg:hover {
   background-position: bottom;
   color: white;
-  /* transition: 0.25s; */
+  transition: 0.25s;
 }
+
 
 /* media queries */
 @media screen and (max-width: 776px) {
+
+  /* navbar mq */
   .navbar {
     flex-direction: column;
   }
-  .colLeft,
-  .colright,
+   
+  /* contact me page mq */
+  .contactLeft,
+  .contactright,
   input[type="submit"] {
     width: 100%;
     margin-top: 0;
