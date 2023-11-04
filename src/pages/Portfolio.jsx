@@ -15,11 +15,16 @@ export default function Portfolio() {
           <div className="overlay">
             <div className="overlayDiv">
               <h2>ReadMi</h2>
-              <div>
-                <a href="https://dry-savannah-12816-a8270f4eeafb.herokuapp.com/home"></a>
-                <FaExternalLinkAlt size={"1.5em"} />
-                <a href="https://github.com/jujusoi/G3-ReadMi"></a>
-                <FaGithub size={"1.5em"} />
+              <div className="overlayLinks">
+                <a
+                  href="https://dry-savannah-12816-a8270f4eeafb.herokuapp.com/home"
+                  target="_blank"
+                >
+                  <FaExternalLinkAlt size={"1.5em"} />
+                </a>
+                <a href="https://github.com/jujusoi/G3-ReadMi" target="_blank">
+                  <FaGithub size={"1.5em"} />
+                </a>
               </div>
             </div>
           </div>
@@ -33,11 +38,19 @@ export default function Portfolio() {
           <div className="overlay">
             <div className="overlayDiv">
               <h2>Lyrynx</h2>
-              <div>
-                <a href="https://alexbishopbootcamp.github.io/music-lyric-player/"></a>
-                <FaExternalLinkAlt size={"1.5em"} />
-                <a href="https://github.com/alexbishopbootcamp/music-lyric-player"></a>
-                <FaGithub size={"1.5em"} />
+              <div className="overlayLinks">
+                <a
+                  href="https://alexbishopbootcamp.github.io/music-lyric-player/"
+                  target="_blank"
+                >
+                  <FaExternalLinkAlt size={"1.5em"} />
+                </a>
+                <a
+                  href="https://github.com/alexbishopbootcamp/music-lyric-player"
+                  target="_blank"
+                >
+                  <FaGithub size={"1.5em"} />
+                </a>
               </div>
             </div>
           </div>
@@ -51,11 +64,19 @@ export default function Portfolio() {
           <div className="overlay">
             <div className="overlayDiv">
               <h2>Original Portfolio</h2>
-              <div>
-                <a href="https://trahy.github.io/w2-my-portfolio/"></a>
-                <FaExternalLinkAlt size={"1.5em"} />
-                <a href="https://github.com/trahy/w2-my-portfolio"></a>
-                <FaGithub size={"1.5em"} />
+              <div className="overlayLinks">
+                <a
+                  href="https://trahy.github.io/w2-my-portfolio/"
+                  target="_blank"
+                >
+                  <FaExternalLinkAlt size={"1.5em"} />
+                </a>
+                <a
+                  href="https://github.com/trahy/w2-my-portfolio"
+                  target="_blank"
+                >
+                  <FaGithub size={"1.5em"} />
+                </a>
               </div>
             </div>
           </div>
@@ -69,11 +90,19 @@ export default function Portfolio() {
           <div className="overlay">
             <div className="overlayDiv">
               <h2>Weather Dashboard</h2>
-              <div>
-                <a href="https://trahy.github.io/w6-weather-dashboard/"></a>
-                <FaExternalLinkAlt size={"1.5em"} />
-                <a href="https://github.com/trahy/w6-weather-dashboard"></a>
-                <FaGithub size={"1.5em"} />
+              <div className="overlayLinks">
+                <a
+                  href="https://trahy.github.io/w6-weather-dashboard/"
+                  target="_blank"
+                >
+                  <FaExternalLinkAlt size={"1.5em"} />
+                </a>
+                <a
+                  href="https://github.com/trahy/w6-weather-dashboard"
+                  target="_blank"
+                >
+                  <FaGithub size={"1.5em"} />
+                </a>
               </div>
             </div>
           </div>
@@ -87,9 +116,13 @@ export default function Portfolio() {
           <div className="overlay">
             <div className="overlayDiv">
               <h2>Regex Tutorial</h2>
-              <div>
-                <a href="https://gist.github.com/trahy/103863277a8ec5bce07337517f611666"></a>
-                <FaExternalLinkAlt size={"1.5em"} />
+              <div className="overlayLinks">
+                <a
+                  href="https://gist.github.com/trahy/103863277a8ec5bce07337517f611666"
+                  target="_blank"
+                >
+                  <FaExternalLinkAlt size={"1.5em"} />
+                </a>
               </div>
             </div>
           </div>
@@ -103,11 +136,16 @@ export default function Portfolio() {
           <div className="overlay">
             <div className="overlayDiv">
               <h2>JATE</h2>
-              <div>
-                <a href="https://p-w-a-jate-5cf98d9385d0.herokuapp.com/"></a>
-                <FaExternalLinkAlt size={"1.5em"} />
-                <a href="https://github.com/trahy/text-editor"></a>
-                <FaGithub size={"1.5em"} />
+              <div className="overlayLinks">
+                <a
+                  href="https://p-w-a-jate-5cf98d9385d0.herokuapp.com/"
+                  target="_blank"
+                >
+                  <FaExternalLinkAlt size={"1.5em"} />
+                </a>
+                <a href="https://github.com/trahy/text-editor" target="_blank">
+                  <FaGithub size={"1.5em"} />
+                </a>
               </div>
             </div>
           </div>
