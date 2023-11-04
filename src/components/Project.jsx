@@ -16,9 +16,12 @@ export default function Project({ image, alt, title, deploy, repo }) {
             <a href={deploy} target="_blank">
               <FaExternalLinkAlt size={"1.5em"} />
             </a>
-            <a href={repo} target="_blank">
-              <FaGithub size={"1.5em"} />
-            </a>
+            {/* if repo is null, do no render */}
+            {repo ? (
+              <a href={repo} target="_blank">
+                <FaGithub size={"1.5em"} />
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
