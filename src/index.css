@@ -15,19 +15,18 @@
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  width: 80%;
-  margin: 0 auto;
   background-color: var(--bg);
-  border-left: var(--border2);
-  border-right: var(--border2);
 }
 
 #root {
-  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-left: var(--border2);
+  border-right: var(--border2);
 }
 
 .main {
@@ -231,11 +230,8 @@ textarea {
 .footerDiv {
   display: flex;
   justify-content: center;
-  width: inherit;
+  width: 100%;
   margin-top: auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   border-top: var(--border2);
 }
 
