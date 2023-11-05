@@ -2,7 +2,7 @@ import * as React from "react";
 import { PDFObject } from "react-pdfobject";
 
 // import my resume
-import myResume from "../assets/huy-resume.pdf";
+import myResume from "../assets/public/huy-resume.pdf";
 
 if (PDFObject.supportsPDFs) {
   console.log("Yay, this browser supports inline PDFs.");

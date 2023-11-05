@@ -1,12 +1,12 @@
 import Project from "../components/Project";
 
 // importing images for project thumbnails
-import readmi from "../assets/ReadMi.png";
-import lyrynx from "../assets/Lyrynx.png";
-import portfolioCSS from "../assets/PortfolioCSS.png";
-import weatherApp from "../assets/WeatherApp.png";
-import regexTutorial from "../assets/regexTutorial.png";
-import jate from "../assets/jate.png";
+import readmi from "../assets/public/ReadMi.png";
+import lyrynx from "../assets/public/Lyrynx.png";
+import portfolioCSS from "../assets/public/PortfolioCSS.png";
+import weatherApp from "../assets/public/WeatherApp.png";
+import regexTutorial from "../assets/public/regexTutorial.png";
+import jate from "../assets/public/jate.png";
 
 // populating array with individual details on each project
 const projects = [
