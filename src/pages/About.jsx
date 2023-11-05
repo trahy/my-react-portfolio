@@ -4,6 +4,7 @@ export default function About() {
       <h1>About Me</h1>
       <div className="aboutDiv">
         <div className="aboutLeft aboutItem">
+          {/* avatar img */}
           <img
             className="about-p"
             src="https://static.vecteezy.com/system/resources/previews/004/819/327/non_2x/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg"
