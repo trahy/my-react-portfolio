@@ -193,7 +193,8 @@ div > label {
 }
 
 textarea {
-  height: 6rem;
+  min-height: 6rem;
+  resize: vertical;
 }
 
 .contactBtn {
