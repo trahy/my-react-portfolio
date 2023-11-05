@@ -12,7 +12,7 @@ export default function Resume() {
     <div className="main">
       <h1>Resume</h1>
       <div className='pdfDiv'>
-        <PDFObject url="src\assets\huy-resume.pdf"/>
+        <PDFObject url="./src/assets/huy-resume.pdf"/>
       </div>
     </div>
   );
