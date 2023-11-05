@@ -1,5 +1,4 @@
 :root {
-  --cambria: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   --bg: #e8e0c9;
   --border1: 1px solid black;
   --border2: 2px solid black;
@@ -16,15 +15,19 @@
 }
 
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  min-height: 100vh;
   width: 80%;
   margin: 0 auto;
   background-color: var(--bg);
   border-left: var(--border2);
   border-right: var(--border2);
+}
+
+#root {
+  width: 100%;
 }
 
 .main {
@@ -36,7 +39,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   letter-spacing: -2px;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 p {
@@ -228,11 +231,12 @@ textarea {
 .footerDiv {
   display: flex;
   justify-content: center;
-  align-content: end;
-  width: 100%;
+  width: inherit;
   margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border-top: var(--border2);
-  box-sizing: border-box;
 }
 
 .footerBtn {
